@@ -123,7 +123,9 @@ final class ProductCardCVCell: BaseCVCell {
     }
 
     @objc private func favoriteButtonTapped() {
+
         delegate?.didTapFavoriteButton(at: idProduct)
+
     }
 
 }
