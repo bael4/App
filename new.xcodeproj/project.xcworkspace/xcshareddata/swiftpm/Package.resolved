@@ -1,0 +1,51 @@
+{
+  "originHash" : "2a7903d2a10668cf74c15e02f805c8d88d9755ce2f6779247235c1c2227c1768",
+  "pins" : [
+    {
+      "identity" : "devicekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devicekit/DeviceKit.git",
+      "state" : {
+        "revision" : "97acf830fd0e0b719126e9450a51c95a91f66858",
+        "version" : "5.2.3"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "5b92f029fab2cce44386d28588098b5be0824ef5",
+        "version" : "7.11.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "adbefab1b21e92c45c21e6cff8eb42632f14a09a",
+        "version" : "14.6.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "771f9224614c3815ef9a54af22ade0413a509250"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}
