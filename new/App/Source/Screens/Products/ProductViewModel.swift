@@ -30,7 +30,6 @@ final class ProductViewModel: ViewModel {
                     self.saveProduct(products: success) {
                         self.fetchDataFromRealm()
                     }
-
                 case .failure(let failure):
                     self.delegate?.handleError(failure.localizedDescription)
                 }

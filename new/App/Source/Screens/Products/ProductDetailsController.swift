@@ -104,8 +104,10 @@ class ProductDetailsController: UIViewController {
             countLabel.text = "amount \(count)"
         }
 
-        favoriteButton.setImage(UIImage(systemName: product.isFavorite ? "heart.fill" : "heart")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: layoutSetup.iconSizeDetails)), for: .normal
-        )
+        DispatchQueue.main.async {
+            self.favoriteButton.setImage(UIImage(systemName: self.product.isFavorite ? "heart.fill" : "heart")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: self.layoutSetup.iconSizeCard)), for: .normal
+            )
+        }
         
     }
 

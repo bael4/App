@@ -99,7 +99,7 @@ extension ProductListController:
         return cell
 
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         cellTapped(at: indexPath)

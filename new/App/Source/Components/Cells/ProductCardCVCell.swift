@@ -106,9 +106,11 @@ final class ProductCardCVCell: BaseCVCell {
 
         }
 
-        favoriteButton.setImage(UIImage(systemName: product.isFavorite ? "heart.fill" : "heart")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: layoutSetup.iconSizeCard)), for: .normal
-        )
-        
+        DispatchQueue.main.async {
+            self.favoriteButton.setImage(UIImage(systemName: product.isFavorite ? "heart.fill" : "heart")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: self.layoutSetup.iconSizeCard)), for: .normal
+            )
+        }
+
         categoryabel.text = product.category
 
         if let price = product.price, let rating = product.rating?.rate {
