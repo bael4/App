@@ -1,5 +1,5 @@
 {
-  "originHash" : "2a7903d2a10668cf74c15e02f805c8d88d9755ce2f6779247235c1c2227c1768",
+  "originHash" : "8ea762e4cf96c29f1b3dc871614665e6dc9dc24dca32b4860191bf9a3457801f",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -20,12 +20,21 @@
       }
     },
     {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "57da4b1270cab7c2228919eabc0e4e1bf93e48ea"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
       "state" : {
-        "revision" : "adbefab1b21e92c45c21e6cff8eb42632f14a09a",
-        "version" : "14.6.0"
+        "revision" : "9cf7ef4ad8e2f4c7a519c9a395ca3d253bb87aa8",
+        "version" : "14.6.2"
       }
     },
     {
@@ -34,7 +43,7 @@
       "location" : "https://github.com/realm/realm-swift",
       "state" : {
         "branch" : "master",
-        "revision" : "771f9224614c3815ef9a54af22ade0413a509250"
+        "revision" : "a478ed826130f1a2419dbe19a26bd3fd905258d1"
       }
     },
     {

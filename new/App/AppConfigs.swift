@@ -12,6 +12,7 @@ import DeviceKit
 
         enum CVCell {
             static let cardCVCell = "CardCVCell"
+            static let liteCell = "LiteCell"
         }
 
         enum NetworkURLs {
