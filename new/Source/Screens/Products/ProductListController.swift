@@ -18,9 +18,57 @@ final class ProductListController: BaseController {
         viewModel.fetchProducts()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let sm = Some()
+        print(sm.quickSort([6, 3, 8]))
     }
 
 }
+
+class Some {
+    func binarySearch(array: [Int], num: Int) -> Int? {
+
+        var left = 0
+        var right = array.count - 1
+    
+        while left <= right {
+            let mid = (left+right) / 2
+            print(mid)
+            if array[mid] == num {
+                return num
+            } else if array[mid] < num {
+                right = mid + 1
+            } else {
+                left = mid - 1
+            }
+        }
+        return nil
+    }
+    
+    func quickSort(_ array: [Int]) -> [Int] {
+        if array.count <= 1 {
+            return array
+        }
+        
+        let pivot = array[array.count / 2]
+        print("\(pivot) pivot")
+        let less = array.filter { $0 < pivot }
+        print("\(less) less")
+        let equal = array.filter { $0 == pivot }
+        print("\(equal) equal")
+        let greater = array.filter { $0 > pivot }
+        print("\(greater) greator")
+        print(quickSort(less) + equal + quickSort(greater))
+        return quickSort(less) + equal + quickSort(greater)
+    }
+
+}
+
 
 extension ProductListController:
     ProductViewModelDelegate,
