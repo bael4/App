@@ -16,7 +16,6 @@ class RealmManager {
 
     func getProducts() -> [ProductModelRealm] {
          Array(realm.objects(ProductModelRealm.self))
-
     }
 
     func saveProduct(

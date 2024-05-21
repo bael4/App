@@ -21,6 +21,11 @@ final class ProductListController: BaseController {
         
     
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Title"
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
